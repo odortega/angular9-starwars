@@ -1,0 +1,12 @@
+<div *ngIf="episode">
+    <h2>{{episode.title}}</h2>
+  
+      <p>
+        {{episode.opening_crawl}}
+      </p>
+</div>
+<div *ngFor="let starship of episode.starships">
+    <p>
+      <a href="{{starship}}">{{starship}}</a>
+    </p>
+</div>
