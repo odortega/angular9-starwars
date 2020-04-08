@@ -7,6 +7,6 @@
 </div>
 <div *ngFor="let starship of episode.starships">
     <p>
-      <a href="{{starship}}">{{starship}}</a>
+      <a [routerLink]="['/starship', starship]">{{starship}}</a>
     </p>
 </div>

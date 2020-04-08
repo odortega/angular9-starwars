@@ -20,8 +20,13 @@ export class EpisodeComponent implements OnInit {
     this.apiService.getEpisode().subscribe((data) => {
       console.log(data);
       this.episode.title = data['title'];
-      this.episode.opening_crawl = data['.opening_crawl'];
+      this.episode.opening_crawl = data['opening_crawl'];
       this.episode.starships = data['starships'];
     });
   }
+
+  goStarShip(url:string){
+    
+  }
+
 }
